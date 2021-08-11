@@ -1,0 +1,30 @@
+{% extends "layout/basic.html" %}
+{% block title %} {{ current_category.name }} {% endblock %}
+{% block content %}
+<h2 class="section-title">Список сайтов</h2>
+<h3 class="section-title">Категория: {{ current_category.name }}</h3>
+<div class="about-content">
+	<form>
+		<p><input type="search" name="q" placeholder="Поиск сайта">
+			<input type="submit" value="Найти"></p>
+	</form>
+	<table>
+		<tr>
+			<th>Сайт</th>
+			<th>Категория</th>
+			<th>Адрес</th>
+			<th>Статус</th>
+			<th>Альтернатива</th>
+		</tr>
+		{% for site in sites %}
+		<tr>
+			<td><a href="{% url 'site_view' site.id %}">{{ site.title }}</a></td>
+			<td><a href="{% url 'by_category' site.category.pk %}">{{ site.category.name }}</a></td>
+			<td>{{ site.address }}</td>
+			<td>{{ site.status}}</td>
+			<td>{{ site.alternative }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</div>
+{% endblock %}

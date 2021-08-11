@@ -1,0 +1,24 @@
+{% extends "layout/basic.html" %}
+{% block content %}
+      <h2 class="section-title">{{ site.title }}</h2>
+	  <h3> <a href="{% url 'by_category' site.category.pk %}">{{ site.category.name }}</a></h3>
+      <div class="about-content">
+		<p class=linebreak>Общая информация</p>
+		<p>{{ site.address }}</p>
+          <p>приоритет, зона обслуживания, шкаф/ключи, карта</p>
+		<p class=linebreak>Оборудование</p>
+		<p>Таблица ЦП с оборудованием по сайту</p>
+		<p class=linebreak>Секторные функции</p>
+		<p>Из таблицы RDB</p>
+		<p class=linebreak>РРЛ/Транспорт</p>
+		<p>CHE_TECH_RRL + IP план</p>
+		<p class=linebreak>Электропитание</p>
+		<p>Вытянуть таблицу Влада из Tech_DB</p>
+		<p class=linebreak>Контакты/доступ</p>
+		<p>Sites Contact + Tech_DB</p>
+		<p class=linebreak>Аккумуляторы, кондиционеры</p>
+		<p>RDB</p>
+		<p class=linebreak>Комментарии</p>
+		<p>общие комментарии с возможностью добавления	</p>
+	</div>
+{% endblock %}

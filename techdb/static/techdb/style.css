@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-width: 640px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Verdana", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #eae9f2;
+}
+
+.section-title {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+a {
+  color: rgb(20, 85, 145);
+}
+
+a:focus {
+  outline-color: #b6aaff;
+}
+
+.page-header {
+  margin-bottom: 40px;
+  background-color: rgb(153, 217, 234);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.page-header .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("img/radiotower.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 290px 212px;
+}
+
+.page-header a {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.page-title {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.theme-button {
+  position: relative;
+  margin-top: 20px;
+  padding-top: 7px;
+  padding-right: 16px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  font-size: 12px;
+  border-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(20, 85, 145);
+  border: 1px solid rgb(20, 85, 145);
+}
+
+.theme-button:active {
+  opacity: 0.8;
+}
+
+.theme-button:focus,
+.theme-button:hover {
+  color: #ffffff;
+  background-color: rgb(20, 85, 145);
+}
+.theme-button:focus {
+  outline-color: #ffffff;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 32px;
+ }
+
+.about-content {
+   width: 1080px;
+   font-size: 14px;
+   line-height: 24px;
+ }
+
+.about-content p {
+   margin: 0;
+   margin-bottom: 12px;
+   padding: 0;
+ }
+ 
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td:first-child {
+  background: rgb(20, 85, 145);
+  color: white;
+  padding: 10px 20px;
+}
+
+th, td {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: white;
+}
+
+td {
+  background: rgb(153, 217, 234);
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+td:first-child a {
+  color: white;
+}
+td:first-child a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+td a {
+  color: black;
+  text-decoration: none;
+}
+td a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.linebreak {
+	background-color: rgb(153, 217, 234);
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;	
+	font-weight: bold;
+	color: rgb(20, 85, 145);
+}
+
+.page-footer {
+  margin-top: auto;
+  color: rgb(20, 85, 145);
+  background-color: rgb(153, 217, 234);
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 14px;
+}
+
+.page-footer p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Тёмная тема */
+.dark-theme {
+  color: #f2f2f2;
+  background-color: #17161a;
+}
+
+.dark-theme .page-header{
+  background-color: rgb(20, 85, 145);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.dark-theme a {
+  color: rgb(153, 217, 234);
+}
+
+.dark-theme .theme-button {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.dark-theme .theme-button:focus,
+.dark-theme .theme-button:hover {
+  color: #17161a;
+  background-color: rgb(153, 217, 234);
+}
+
+.dark-theme .page-footer {
+  background-color: rgb(20, 85, 145);
+  color: #f2f2f2;
+}
+
+.dark-theme table {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px;
+border-collapse: collapse;
+text-align: center;
+}
+.dark-theme th{
+background: rgb(153, 217, 234);
+color: black;
+padding: 10px 20px;
+}
+
+.dark-theme td:first-child {
+background: rgb(153, 217, 234);
+color: black;
+padding: 10px 20px;
+}
+
+.dark-theme th, td {
+border-style: solid;
+border-width: 0 1px 1px 0;
+border-color: white;
+}
+.dark-theme td {
+background: rgb(20, 85, 145);
+}
+.dark-theme th:first-child, td:first-child {
+text-align: left;
+}
+
+.dark-theme td:first-child a {
+  color: black;
+  text-decoration: none;
+}
+.dark-theme td:first-child a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.dark-theme td a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.dark-theme td a {
+	color: white;
+	text-decoration: none;
+}
+
+
+.dark-theme .linebreak {
+	background-color: rgb(20, 85, 145);
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;	
+	font-weight: bold;
+	color: white;
+}

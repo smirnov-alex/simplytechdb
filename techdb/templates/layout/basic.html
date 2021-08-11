@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'techdb/style.css' %}">
+  <title>{% block title %} Главная {% endblock %} :: Simply TechDB</title>
+</head>
+<body class="page">
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title"><a href="{% url 'index' %}">Simply TechDB</a></h1>
+	  <p>it's so simply!</p>
+	  <button class="theme-button" type="button">Изменить тему</button>
+    </div>
+  </header>
+  <main>
+      <section class="about container">
+          <nav class="container">
+            <a href="{% url 'index' %}">Главная</a>
+            <a href="{% url 'new' %}">Добавить сайт</a>
+	        {% for category in categories %}
+            <a href="{% url 'by_category' category.pk %}">{{ category.name }}</a>
+	        {% endfor %}
+          </nav>
+          {% block content %}
+          {% endblock %}
+      </section>
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <p>© Simply TechDB</p>
+      <p>{% now "Y" %}</p>
+    </div>
+  </footer>
+  <script src="{% static 'techdb/script.js' %}"></script>
+</body>
+</html>
