@@ -13,7 +13,7 @@ from .forms import SiteForm, CommentForm
 
 def index(request):
     sites = Site.objects.all()
-    paginator = Paginator(sites, 150)
+    paginator = Paginator(sites, 10)
     page_num = request.GET.get('page')
     page = paginator.get_page(page_num)
     all_dutys = DutyTimetable.objects.all()

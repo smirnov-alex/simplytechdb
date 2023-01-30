@@ -1,22 +1,22 @@
 @font-face {
-    font-family: "StandartStencil";
-    src: url("fonts/StandardStencil-Bold.otf");
-    font-weight: 700;
+    font-family: "Rubik";
+    src: url("fonts/rubik-800.woff2");
+    font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Tele2 Display Serif";
-    src: url("fonts/Tele2DisplaySerif-Regular.otf");
+    font-family: "Rubik";
+    src: url("fonts/rubik-400.woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Tele2 Display Serif";
-    src: url("fonts/Tele2DisplaySerif-Bold.otf");
+    font-family: "Rubik";
+    src: url("fonts/rubik-700.woff2");
     font-weight: 700;
     font-style: bold;
     font-display: swap;
@@ -29,7 +29,7 @@ html {
 body {
     background: #ffffff;
     color: #000000;
-    font-family: "Tele2 Display Serif", "Arial", serif;
+    font-family: "Rubik", "Arial", serif;
     font-size: 16px;
     line-height: 20px;
     font-style: normal;
@@ -79,8 +79,9 @@ body {
 }
 
 .page-header__title {
-    font-family: "StandartStencil";
+    font-family: "Rubik";
     font-size: 36px;
+    font-weight: 800;
     display: flex;
     align-self: center;
 }
@@ -198,7 +199,7 @@ body {
 
 .search__input::-webkit-input-placeholder {
     color: #a3adb8;
-    font-family: "Tele2 Display Serif";
+    font-family: "Rubik";
 }
 
 .search__disclaimer {
@@ -422,7 +423,7 @@ form p {
     border-radius: 49px;
     box-sizing: border-box;
     color: #1f2229;
-    font-family: "Tele2 Display Serif", "Arial", serif;
+    font-family: "Rubik", "Arial", serif;
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
@@ -685,6 +686,7 @@ i {
     margin: 0;
     padding: 0;
     margin-bottom: 16px;
+    text-decoration: underline;
 }
 
 .useful__link:hover {

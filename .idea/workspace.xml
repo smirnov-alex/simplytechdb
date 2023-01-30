@@ -5,25 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a49b9595-4706-4aae-a613-7eb4dc3b79ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/smirn.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/techdb/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/techdb/templates/techdb/search_results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplytechdb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/simplytechdb/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplytechdb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/simplytechdb/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/techdb/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/techdb/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/techdb/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/techdb/static/techdb/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/static/techdb/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/static/techdb/fonts/StandardStencil-Bold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/static/techdb/fonts/Tele2DisplaySerif-Bold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/static/techdb/fonts/Tele2DisplaySerif-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/static/techdb/fonts/Tele2TextSans-Bold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/static/techdb/fonts/Tele2TextSans-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/static/techdb/img/Christmastree_5708.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/techdb/static/techdb/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/static/techdb/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/techdb/templates/layout/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/templates/layout/basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/techdb/static/techdb/img/Christmastree_5708.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/templates/techdb/bss_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/templates/techdb/bss_info.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/techdb/templates/techdb/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/templates/techdb/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/techdb/templates/techdb/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/templates/techdb/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/templates/techdb/search_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/templates/techdb/search_results.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/techdb/templates/techdb/site.html" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/templates/techdb/site.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/techdb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/templates/techdb/useful_sites.html" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/templates/techdb/useful_sites.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/techdb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628514579690</updated>
-      <workItem from="1675054584178" duration="3669000" />
+      <workItem from="1675054584178" duration="9554000" />
     </task>
     <servers />
   </component>
