@@ -1,10 +1,15 @@
 {% extends "layout/basic.html" %}
 {% block title %} Добавить сайт {% endblock %}
 {% block content %}
-<h2>Добавить новый сайт</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Добавить">
-</form>
+
+<div class="login__container">
+    <h2 class="login__title">Добавить новый сайт</h2>
+    <p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="site__comments-button" type="submit" value="Добавить">
+    </form>
+    </p>
+</div>
 {% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layout/basic.html" %}
+{% block title %}
+Телефонный справочник
+{% endblock %}
+{% block content %}
+<main class="page-main">
+    <h2 class="phonebook__title">Телефонный справочник</h2>
+    <section class="phonebook">        
+        <h3 class="phonebook__subtitle">Телефоны электрических сетей</h3>
+        <table class="sites__table phonebook__table">
+            <tr>
+                <th class="sites__table-title">Район</th>
+                <th class="sites__table-title">Телефон</th>
+                <th class="sites__table-title">Примечание</th>
+            </tr>
+            {% for phone in phones %}
+            <tr>
+                <td class="sites__table-cell">{{ phone.title }}</td>
+                <td class="sites__table-cell">{{ phone.phone }}</td>
+                <td class="sites__table-cell">{{ phone.comment}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </section>
+</main>
+{% endblock %}

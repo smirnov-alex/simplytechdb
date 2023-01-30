@@ -1,28 +1,57 @@
 {% extends "layout/basic.html" %}
 {% block content %}
-<h2 class="section-title">Список сайтов</h2>
-<div class="about-content">
-	<form>
-		<p><input type="search" name="q" placeholder="Поиск сайта">
-			<input type="submit" value="Найти"></p>
-	</form>
-	<table>
-		<tr>
-			<th>Сайт</th>
-			<th>Категория</th>
-			<th>Адрес</th>
-			<th>Статус</th>
-			<th>Альтернатива</th>
-		</tr>
-		{% for site in sites %}
-		<tr>
-			<td><a href="{% url 'site_view' site.id %}">{{ site.title }}</a></td>
-			<td><a href="{% url 'by_category' site.category.pk %}">{{ site.category.name }}</a></td>
-			<td>{{ site.address }}</td>
-			<td>{{ site.status}}</td>
-			<td>{{ site.alternative }}</td>
-		</tr>
-		{% endfor %}
-	</table>
-</div>
+<main class="page-main">
+	<div class="hero_container">
+		<section class="search">
+			<h3 class="search__title">Поиск сайта</h3>
+			<form action="{% url 'search_results' %}" method="get">
+				<input class="search__input" name="q" type="text" placeholder="Например CH1000...">
+			</form>
+			<p class="search__disclaimer">*Поиск работает по номеру сайта, в т.ч. без индекса региона, и по адресу с
+				учетом регистра</p>
+		</section>
+		<section class="duty">
+			<h4 class="duty_date">{% now "d E Y" %}</h4>
+			<h5 class="duty_title">Дежурный инженер:</h5>
+			<p class="duty_text">{{ today_duty.duty}}<span class="duty_add-info">{{ today_duty.duty_add}}</span></p>
+			<h5 class="duty_title">Инженер поддержки:</h5>
+			<p class="duty_text">{{ today_duty.support}}<span class="duty_add-info">{{ today_duty.support_add}}</span>
+			</p>
+			<a href="{% url 'shedule' %}" class="duty__link">График дежурств</a>
+		</section>
+	</div>
+	<section class="sites">
+		<h3 class="sites__title site__title--main">Список сайтов
+			<i class="arrow down"></i>
+		</h3>
+		<div class="rollup-container-sites visually-hidden">
+			<table class="sites__table">
+				<tr>
+					<th class="sites__table-title">Сайт</th>
+					<th class="sites__table-title">Категория</th>
+					<th class="sites__table-title">Адрес</th>
+					<th class="sites__table-title">Статус</th>
+					<th class="sites__table-title">Альтернатива</th>
+				</tr>
+				{% for site in page %}
+				<tr>
+					<td class="sites__table-cell">
+						<a href="{% url 'site_view' site.id %}" class="sites__link">{{ site.title }}</a>
+					</td>
+					<td class="sites__table-cell">{{ site.category.name }}</td>
+					<td class="sites__table-cell">{{ site.address }}</td>
+					<td class="sites__table-cell">{{ site.status}}</td>
+					{% if site.alternative != None %}
+					<td class="sites__table-cell">{{ site.alternative }}</td>
+					{% else %}
+					<td></td>
+					{% endif %}
+				</tr>
+				{% endfor %}
+			</table>
+			{% include "techdb/paginator.html" %}
+		</div>
+	</section>
+
+</main>
 {% endblock %}

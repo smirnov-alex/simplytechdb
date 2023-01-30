@@ -1,0 +1,18 @@
+{% extends "layout/basic_ret.html" %}
+{% block title %}
+Текущая выгрузка
+{% endblock %}
+{% block content %}
+<main class="page-main">
+	<div class="hero_container">
+		<section class="search">
+			<h3 class="search__title">Проверка наличия текущей выгрузки</h3>
+            <form action="{% url 'upload_current' %}" method="POST">
+				{% csrf_token %}
+				{{ form.as_p }}
+				<input class="site__comments-button" type="submit" name="submit" value="Проверить" />
+			</form>
+		</section>
+	</div>
+</main>
+{% endblock %}

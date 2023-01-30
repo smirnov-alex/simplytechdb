@@ -1,0 +1,165 @@
+{% extends "layout/basic_ret.html" %}
+{% block title %}
+{{ bs }} выгрузка UniqueID
+{% endblock %}
+{% block content %}
+<main class="page-main">
+	<div class="hero_container">
+		<section class="search">
+			<h3 class="search__title">Выгрузка UniqueID на {{ bs }}</h3>
+			<p class="search__disclaimer">БС: {{ bs }}</p>
+			<p class="search__disclaimer">Имя пользователя: {{ login }}</p>
+			<p class="search__disclaimer">Сервер: {{ server }}</p>            
+			{% if RET_list == "No_connection" %}
+			<p class="duty__text">Сетевой элемент {{ bs }} недоступен или не существует!</p>
+			{% elif RET_list == "No_auth" %}
+			<p class="duty__text">Нет подключения! Проверьте имя/пароль пользователя ENM!</p>
+            {% elif RET_list == "Empty_file" %}
+			<p class="duty__text">{{ bs }} - RET не подключены! Проверьте подключение RET!</p>
+			{% else %}      
+            <form action="{% url 'create_script' %}" method="POST"> 
+                {% csrf_token %} 
+			    <table class="ret__table">
+			    	<tr>
+					    <th class="ret__table-title">№</th>
+					    <th class="ret__table-title">BS</th>
+					    <th class="ret__table-title">Sector</th>
+					    <th class="ret__table-title">RRU</th>
+					    <th class="ret__table-title">Unique ID</th>
+                        <th class="ret__table-title">Technology</th>
+					    <th class="ret__table-title">Current El Tilt</th>					
+			    	</tr>
+			        {% for ret in RET_list %}
+			        {% if ret.2 == 1 %}
+			        <tr>
+			        	<td class="ret__table-cell ret__table-cell--sec1">{{ ret.0 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec1">{{ ret.1 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec1">{{ ret.2 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec1">{{ ret.3 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec1">{{ ret.4 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec1">
+                            <select size="1" name="tech_{{ ret.0 }}">
+                                <option value="Not Used">Not Used</option>
+                                <option value="GSM900">GSM900</option>
+                                <option value="GSM1800">GSM1800</option>
+                                <option value="UMTS2100">UMTS2100</option>
+                                <option value="UMTS2100(6x)">UMTS2100(6x)</option>
+                                <option value="LTE800">LTE800</option>
+                                <option value="LTE1800">LTE1800</option>
+                                <option value="LTE1800(2)">LTE1800(2)</option>
+                                <option value="LTE2100">LTE2100</option>
+                                <option value="LTE2100(6x)">LTE2100(6x)</option>
+                                <option value="LTE2300">LTE2300</option>
+                                <option value="LTE2300(2)">LTE2300(2)</option> 
+                                <option value="LTE2600">LTE2600</option>
+                                <option value="LTE2600(2)">LTE2600(2)</option>                        
+                            </select></td>                    
+			        	<td class="ret__table-cell ret__table-cell--sec1">
+                            <select size="1" name="tilt_{{ ret.0 }}">
+                                <option value="Not Used">Not Used</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="60">60</option>
+                                <option value="70">70</option>
+                                <option value="80">80</option>
+                                <option value="90">90</option>
+                                <option value="100">100</option>
+                                <option value="110">110</option>
+                                <option value="120">120</option>
+                            </select></td>
+			        </tr>
+			        {% elif ret.2 == 2 %}
+			        <tr>
+			        	<td class="ret__table-cell ret__table-cell--sec2">{{ ret.0 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec2">{{ ret.1 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec2">{{ ret.2 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec2">{{ ret.3 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec2">{{ ret.4 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec2">
+                            <select size="1" name="tech_{{ ret.0 }}">
+                                <option value="Not Used">Not Used</option>
+                                <option value="GSM900">GSM900</option>
+                                <option value="GSM1800">GSM1800</option>
+                                <option value="UMTS2100">UMTS2100</option>
+                                <option value="UMTS2100(6x)">UMTS2100(6x)</option>
+                                <option value="LTE800">LTE800</option>
+                                <option value="LTE1800">LTE1800</option>
+                                <option value="LTE1800(2)">LTE1800(2)</option>
+                                <option value="LTE2100">LTE2100</option>
+                                <option value="LTE2100(6x)">LTE2100(6x)</option>
+                                <option value="LTE2300">LTE2300</option>
+                                <option value="LTE2300(2)">LTE2300(2)</option>
+                                <option value="LTE2600">LTE2600</option>
+                                <option value="LTE2600(2)">LTE2600(2)</option>                        
+                        </select></td>				
+			        	<td class="ret__table-cell ret__table-cell--sec2">
+                            <select size="1" name="tilt_{{ ret.0 }}">
+                                <option value="Not Used">Not Used</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="60">60</option>
+                                <option value="70">70</option>
+                                <option value="80">80</option>
+                                <option value="90">90</option>
+                                <option value="100">100</option>
+                                <option value="110">110</option>
+                                <option value="120">120</option>
+                            </select>
+                        </td>
+			        </tr>
+			        {% else %}
+			        <tr class="sites__table-row">
+			        	<td class="ret__table-cell ret__table-cell--sec3">{{ ret.0 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec3">{{ ret.1 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec3">{{ ret.2 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec3">{{ ret.3 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec3">{{ ret.4 }}</td>
+			        	<td class="ret__table-cell ret__table-cell--sec3">
+                            <select size="1" name="tech_{{ ret.0 }}">
+                                <option value="Not Used">Not Used</option>
+                                <option value="GSM900">GSM900</option>
+                                <option value="GSM1800">GSM1800</option>
+                                <option value="UMTS2100">UMTS2100</option>
+                                <option value="UMTS2100(6x)">UMTS2100(6x)</option>
+                                <option value="LTE800">LTE800</option>
+                                <option value="LTE1800">LTE1800</option>
+                                <option value="LTE1800(2)">LTE1800(2)</option>
+                                <option value="LTE2100">LTE2100</option>
+                                <option value="LTE2100(6x)">LTE2100(6x)</option>
+                                <option value="LTE2300">LTE2300</option>
+                                <option value="LTE2300(2)">LTE2300(2)</option>
+                                <option value="LTE2600">LTE2600</option>
+                                <option value="LTE2600(2)">LTE2600(2)</option>                        
+                        </select></td>				
+			        	<td class="ret__table-cell ret__table-cell--sec3">
+                            <select size="1" name="tilt_{{ ret.0 }}">
+                                <option value="Not Used">Not Used</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="60">60</option>
+                                <option value="70">70</option>
+                                <option value="80">80</option>
+                                <option value="90">90</option>
+                                <option value="100">100</option>
+                                <option value="110">110</option>
+                                <option value="120">120</option>
+                            </select>
+                        </td>
+			        </tr>
+			        {% endif %}
+			        {% endfor %}
+		        </table>			
+                <input type="text" name="bs" value="{{ bs }}" hidden>
+				<input class="site__comments-button" type="submit" name="submit" value="Сгенерировать скрипт" />
+			</form>
+            {% endif %}            
+		</section>
+	</div>
+</main>
+{% endblock %}

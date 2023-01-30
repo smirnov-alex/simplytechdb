@@ -1,0 +1,68 @@
+{% extends "layout/basic_ret.html" %}
+{% block title %}
+{{ bs }} проверка калибровки
+{% endblock %}
+{% block content %}
+<main class="page-main">
+	<div class="hero_container">
+		<section class="search">
+			<h3 class="search__title">Проверка калибровки RET на {{ bs }}</h3>
+			<p class="search__disclaimer">БС: {{ bs }}</p>
+			<p class="search__disclaimer">Имя пользователя: {{ login }}</p>
+			<p class="search__disclaimer">Сервер: {{ server }}</p>
+			{% if RET_list == "No_connection" %}
+			<p class="duty__text">Сетевой элемент {{ bs }} недоступен или не существует!</p>
+			{% elif RET_list == "No_auth" %}
+			<p class="duty__text">Нет подключения! Проверьте имя/пароль пользователя ENM!</p>
+			{% elif RET_list == "No_rets" %}
+			<p class="duty__text">На сетевом элементе {{ bs }} нет прописанных RET!</p>
+			{% else %}
+			<table class="ret__table">
+				<tr>
+					<th class="ret__table-title">№</th>
+					<th class="ret__table-title">RET label</th>
+					<th class="ret__table-title">Sector</th>
+					<th class="ret__table-title">RRU</th>
+					<th class="ret__table-title">Unique ID</th>
+					<th class="ret__table-title">Current El Tilt</th>
+					<th class="ret__table-title">Operational State</th>
+				</tr>
+			    {% for ret in RET_list %}
+			    {% if ret.2 == 1 %}
+			    <tr>
+			    	<td class="ret__table-cell ret__table-cell--sec1">{{ ret.0 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec1">{{ ret.1 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec1">{{ ret.2 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec1">{{ ret.3 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec1">{{ ret.4 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec1">{{ ret.6 }}</td>				
+			    	<td class="ret__table-cell ret__table-cell--sec1">{{ ret.7 }}</td>
+			    </tr>
+			    {% elif ret.2 == 2 %}
+			    <tr>
+			    	<td class="ret__table-cell ret__table-cell--sec2">{{ ret.0 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec2">{{ ret.1 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec2">{{ ret.2 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec2">{{ ret.3 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec2">{{ ret.4 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec2">{{ ret.6 }}</td>				
+			    	<td class="ret__table-cell ret__table-cell--sec2">{{ ret.7 }}</td>
+			    </tr>
+			    {% else %}
+			    <tr class="sites__table-row">
+			    	<td class="ret__table-cell ret__table-cell--sec3">{{ ret.0 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec3">{{ ret.1 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec3">{{ ret.2 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec3">{{ ret.3 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec3">{{ ret.4 }}</td>
+			    	<td class="ret__table-cell ret__table-cell--sec3">{{ ret.6 }}</td>				
+			    	<td class="ret__table-cell ret__table-cell--sec3">{{ ret.7 }}</td>
+			    </tr>
+			    {% endif %}
+			    {% endfor %}
+		    </table>
+			{% endif %}
+		</section>
+	</div>
+</main>
+{% endblock %}

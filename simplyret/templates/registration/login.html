@@ -1,0 +1,15 @@
+{% extends "layout/basic.html" %}
+{% block content %}
+<main class="page-main">
+  <div class="login__container">
+    <h2 class="login__title">Введите учетные данные</h2>
+    <p>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button class="site__comments-button" type="submit">Авторизоваться</button>
+    </form>
+    </p>
+  </div>
+</main>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "layout/basic.html" %}
+{% block title %}
+График дежурств
+{% endblock %}
+{% block content %}
+<main class="page-main">
+    <h2 class="phonebook__title">График дежурств</h2>
+    <section class="phonebook">
+        <table class="sites__table phonebook__table">
+            <tr>
+                <th class="sites__table-title">Дата</th>
+                <th class="sites__table-title">Дежурный</th>
+                <th class="sites__table-title">Поддержка</th>
+            </tr>
+            {% for duty in dutys_past %}
+            <tr>
+                <td class="sites__table-cell sites__table-cell--past">{{ duty.date_start|date:"d E Y"}}</td>
+                <td class="sites__table-cell sites__table-cell--past">{{ duty.duty }}</td>
+                <td class="sites__table-cell sites__table-cell--past">{{ duty.support}}</td>
+            </tr>
+            {% endfor %}
+            {% for duty in dutys %}
+            {% if forloop.first %}
+            <tr>
+                <td class="sites__table-cell sites__table-cell--today">{{ duty.date_start|date:"d E Y"}}</td>
+                <td class="sites__table-cell sites__table-cell--today">{{ duty.duty }}</td>
+                <td class="sites__table-cell sites__table-cell--today">{{ duty.support}}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td class="sites__table-cell">{{ duty.date_start|date:"d E Y"}}</td>
+                <td class="sites__table-cell">{{ duty.duty }}</td>
+                <td class="sites__table-cell">{{ duty.support}}</td>
+            </tr>
+            {% endif %}            
+            {% endfor %}
+        </table>
+    </section>
+</main>
+{% endblock %}

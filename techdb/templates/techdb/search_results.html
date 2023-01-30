@@ -1,0 +1,44 @@
+{% extends "layout/basic.html" %}
+{% block content %}
+<main class="page-main">
+	<section class="search_results">
+		<h3 class="search__title">Результаты поиска</h3>
+		<form action="{% url 'search_results' %}" method="get">
+			<input class="search__input" name="q" type="text" placeholder="Например CH1000...">
+		</form>
+		<p class="search__disclaimer">*Поиск работает по номеру сайта, в т.ч. без индекса региона, и по адресу с
+			учетом регистра</p>
+		{% if object_list %}
+		<table class="sites__table">
+			<tr>
+				<th class="sites__table-title">Сайт</th>
+				<th class="sites__table-title">Категория</th>
+				<th class="sites__table-title">Адрес</th>
+				<th class="sites__table-title">Статус</th>
+				<th class="sites__table-title">Альтернатива</th>
+			</tr>
+			{% for site in object_list %}
+			<tr>
+				<td class="sites__table-cell">
+					<a href="{% url 'site_view' site.id %}" class="sites__link">{{ site.title }}</a>
+				</td>
+				<td class="sites__table-cell">{{ site.category.name }}</td>
+				<td class="sites__table-cell">{{ site.address }}</td>
+				<td class="sites__table-cell">{{ site.status}}</td>
+				{% if site.alternative != None %}
+				<td class="sites__table-cell">{{ site.alternative }}</td>
+				{% else %}
+				<td></td>
+				{% endif %}
+			</tr>
+			{% endfor %}
+		</table>
+		{% else %}
+		<p>
+			Ничего не найдено!
+		</p>
+	</section>
+
+{% endif %}
+</main>
+{% endblock %}

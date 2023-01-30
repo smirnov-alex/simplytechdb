@@ -1,0 +1,23 @@
+{% extends "layout/basic_ret.html" %}
+{% block content %}
+<main class="page-main">
+	<div class="hero_container">
+		<section class="search">
+			<h3 class="ret__title">Сделать выгрузку Unique ID</h3>
+			<form action="{% url 'upload_unique_id' %}" method="POST">
+				{% csrf_token %}
+				{{ form.as_p }}
+				<input class="site__comments-button" type="submit" name="submit" value="Выгрузить" />
+			</form>
+		</section>
+		<section class="search">
+			<h3 class="ret__title">Проверить калибровку RET</h3>
+			<form action="{% url 'check_calibration' %}" method="POST">
+				{% csrf_token %}
+				{{ form.as_p }}
+				<input class="site__comments-button" type="submit" name="submit" value="Проверить" />
+			</form>
+		</section>
+	</div>
+</main>
+{% endblock %}

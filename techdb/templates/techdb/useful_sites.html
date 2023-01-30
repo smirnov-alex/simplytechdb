@@ -1,0 +1,33 @@
+{% extends "layout/basic.html" %}
+{% block title %}
+Полезные ссылки
+{% endblock %}
+{% block content %}
+<main class="page-main">
+    <h2 class="useful__title">Полезные ссылки</h2>
+    <section class="useful">
+        <h3 class="useful__subtitle">RDB</h3>
+        <a href="https://rdb.tele2.ru/p/list.aspx?op=list&k=c3a5t1r&view=c3a5ts5c1cs9r133" class="useful__link" target="_blank">Rollout DB</a>        
+        <a href="https://rdb.tele2.ru/p/list.aspx?op=list&k=c3a5t40r&view=c3a5ts5c40cs7r1013" class="useful__link" target="_blank">Выгрузка по ЭПУ и АКБ</a>
+        <a href="https://rdb.tele2.ru/p/list.aspx?op=list&k=c3a5t24r&view=c3a5ts5c24cs7r765" class="useful__link" target="_blank">Выгрузка по СКВ</a>
+        <a href="https://rdb.tele2.ru/p/list.aspx?op=list&k=c3a5t2r&view=c3a5ts5c2cs7r1838" class="useful__link" target="_blank">Выгрузка по приоритетам и расстояниям до БС</a>
+
+        <h3 class="useful__subtitle">Внутренние ресурсы</h3>
+        <a href="http://10.78.223.66/ericsson/Temp/temp.php?page=get" class="useful__link" target="_blank">Выгрузка по температурам на TCU</a>
+        <a href="https://wiki.tele2.ru/pages/viewpage.action?pageId=88024144" class="useful__link" target="_blank">База знаний BSS.CP Ericsson</a>
+        <a href="https://wiki.tele2.ru/display/CPAccess/Transport.CP_Access" class="useful__link" target="_blank">База знаний Transport.CP</a>
+        <a href="http://10.78.223.66/CreateSite_web/CES/index.php " class="useful__link" target="_blank">Create Site <span class="useful__disclaimer">*IP-план и датабилды для сайтов. Необходима авторизация.</span></a>
+        <a href="http://tch.corp.tele2.ru/Pages/default.aspx#InplviewHash02c5aa2f-26a7-46aa-a360-2ed1f28c564b=SortField%3DComments-SortDir%3DAsc-WebPartID%3D%7B122974E9--56FC--44DA--B127--BE45918D3BA0%7D-FilterField1%3Dregion-FilterValue1%3DCH-FilterField2%3DStatus-FilterValue2%3DEXT" class="useful__link" target="_blank">TCH Report
+            <span class="useful__disclaimer">*Задания PS Integrity</span>
+        </a>
+        <a href="https://app.corp.tele2.ru/ImpCP/Documents/Forms/AllItems.aspx?RootFolder=%2fImpCP%2fDocuments%2fReports&FolderCTID=0x012000BEE37E48794D024288C3D3B182DD80E8" class="useful__link" target="_blank">Ресурс ЦП по оборудованию
+            <span class="useful__disclaimer">*Полезная выгрузка Ericsson_modules</span>
+        </a>
+        <a href="http://torus.corp.tele2.ru/Explorer0/?" class="useful__link" target="_blank">Torus</a>
+        <h3 class="useful__subtitle">Внешние ресурсы</h3>
+        <a href="https://rosseti-ural.ru/client/informaciya-ob-otklyucheniyah/" class="useful__link" target="_blank">Информация об отключениях МРСК</a>
+        <a href="https://www.cellmapper.net/arfcn?net=LTE&ARFCN=1425&MCC=0" class="useful__link" target="_blank">Частотный калькулятор</a>
+        
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout/basic_ret.html" %}
+{% block title %}
+{{ bs }} прописка RET
+{% endblock %}
+{% block content %}
+<main class="page-main">
+	<div class="hero_container">
+		<section class="search">
+			<h3 class="search__title">Статус прописки RET на {{ bs }}</h3>
+			<p class="search__disclaimer">БС: {{ bs }}</p>
+			<p class="search__disclaimer">Имя пользователя: {{ login }}</p>
+			<p class="search__disclaimer">Сервер: {{ server }}</p> 
+			<h3 class="ret__title"> {{ result }}</h3>
+		</section>
+	</div>
+</main>
+{% endblock %}

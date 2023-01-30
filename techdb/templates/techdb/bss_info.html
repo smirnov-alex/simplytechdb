@@ -1,0 +1,108 @@
+{% extends "layout/basic.html" %}
+{% block title %}
+Справочник BSS
+{% endblock %}
+{% block content %}
+<main class="page-main">
+	<h2 class="info__title">Справочник BSS</h2>
+	<section class="info__chapter">
+		<h3 class="info__subtitle">Базовые команды для Baseband</h3>
+
+		<dl class="info__text">
+			<h4 class="info__subject">Статус основных элементов</h4>
+			<dt class="info__label">Проверка RRU и секторов: </dt>
+			<dd class="info__command">st rru<br>
+				st cell
+			</dd>
+			<dt class="info__label">Проверка GSM: </dt>
+			<dd class="info__command">lst gsm<br>
+				st trx
+			</dd>
+			<dt class="info__label">Проверка КСВ, оптики температуры на портах и проч.: </dt>
+			<dd class="info__command">invxr</dd>
+			<dt class="info__label">Проверка доступности RNC: </dt>
+			<dd class="info__command">lst iub</dd>
+			<dt class="info__label">Проверка доступности MME LTE: </dt>
+			<dd class="info__command">st mme</dd>
+			<dt class="info__label">Проверка синхронизации: </dt>
+			<dd class="info__command">sts <br>
+				st ntp</dd>
+			<dt class="info__label">Проверка GPS: </dt>
+			<dd class="info__command">gpsstatus</dd>
+			<dt class="info__label">Проверка RET: </dt>
+			<dd class="info__command">st ret<br>
+				hget AntennaNearUnit operationalState|^uniqueId|serialNumber|productNumber|rfPortRef<br>
+				hget RetSubUnit= calibrationStatus|electricalAntennaTilt|tiltChangeStatus|operationalState</dd>
+			<dt class="info__label">Проверка внешних аварий:</dt>
+			<dd class="info__command">st alarmport <br>
+				hget Alarmport
+				operationalState|administrativeState|alarmSlogan|normallyOpen|perceivedSeverity|activeExternalAlarm
+			</dd>
+			<h4 class="info__subject">Секторная информация</h4>
+			<dt class="info__label">Привязка к несущим: </dt>
+			<dd class="info__command">st sector <br>
+				get sector ref<br>
+				get sector reserv
+			</dd>
+			<dt class="info__label">Проверка rfBranch:</dt>
+			<dd class="info__command">st carr<br>
+				get carr ref<br>
+				get carr reserv
+			</dd>
+			<dt class="info__label">Проверка количества прописанных TRX: </dt>
+			<dd class="info__command">hget carr [tr]xant</dd>
+			<dt class="info__label">Проверка мощности на секторах: </dt>
+			<dd class="info__command">get sector power$ <br>
+			</dd>
+			<h4 class="info__subject">Информация по RRU/Radio</h4>
+			<dt class="info__label">Общая информация по RRU: </dt>
+			<dd class="info__command">st rru <br>
+				hget rru prod
+			</dd>
+			<dt class="info__label">Привязка антенных выходов к RRU: </dt>
+			<dd class="info__command">hget RfBranch ref<br>
+				hget RfBranch reserve
+			</dd>
+			<dt class="info__label">Подключение RRU (sfp->riport->rilink): </dt>
+			<dd class="info__command">st sfp<br>
+				st riport<br>
+				st rilink<br>
+				hget RiLink rate|ref|st
+			</dd>
+			<h4 class="info__subject">Транспорт</h4>
+			<dt class="info__label">Проверка прописанных vlan: </dt>
+			<dd class="info__command">get port vlan<br>
+				get vlanport= reserv
+			</dd>
+			<dt class="info__label">Проверка прописанных ip-адресов: </dt>
+			<dd class="info__command">lst router<br>
+				lpr router<br>
+				lget router address<br>
+				get AddressIPv4 res
+			</dd>
+			<dt class="info__label">Проверка доступности IUB (ping defaultRouter IUB): </dt>
+			<dd class="info__command">mcc router=iub ping 172.16.79.186</dd>
+			
+		</dl>
+		<h3 class="info__subtitle">Базовые команды для DUW</h3>
+		<dl class="info__text">
+			<dt class="info__label">Рестарт DUW: </dt>
+			<dd class="info__command">acc managedelement=1 manualrestart </dd>
+			<dt class="info__label">Рестарт RRU (указать сектор в параметре SectorAntenna):
+			<dt>
+			<dd class="info__command">acc SectorAntenna=1-1,AuxPlugInUnit=RRUW-1 restartAuxUnit </dd>
+		</dl>
+		<h3 class="info__subtitle">Базовые команды для TCU</h3>
+		<dl class="info__text">
+			<dt class="info__label">Общая информация по интерфейсам на TCU:</dt>
+			<dd class="info__command">showtable interface </dd>
+			<dt class="info__label">Проверка аварий:</dt>
+			<dd class="info__command">getalarmlist </dd>
+			<dt class="info__label">Проверка температуры :</dt>
+			<dd class="info__command">gettemperature</dd>
+			<dt class="info__label">Справочная информация: </dt>
+			<dd class="info__command">help</dd>
+		</dl>
+	</section>
+</main>
+{% endblock %}

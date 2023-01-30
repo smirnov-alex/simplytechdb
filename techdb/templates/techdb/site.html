@@ -1,24 +1,175 @@
 {% extends "layout/basic.html" %}
+{% block title %}
+{{ site.title }}
+{% endblock %}
 {% block content %}
-      <h2 class="section-title">{{ site.title }}</h2>
-	  <h3> <a href="{% url 'by_category' site.category.pk %}">{{ site.category.name }}</a></h3>
-      <div class="about-content">
-		<p class=linebreak>Общая информация</p>
-		<p>{{ site.address }}</p>
-          <p>приоритет, зона обслуживания, шкаф/ключи, карта</p>
-		<p class=linebreak>Оборудование</p>
-		<p>Таблица ЦП с оборудованием по сайту</p>
-		<p class=linebreak>Секторные функции</p>
-		<p>Из таблицы RDB</p>
-		<p class=linebreak>РРЛ/Транспорт</p>
-		<p>CHE_TECH_RRL + IP план</p>
-		<p class=linebreak>Электропитание</p>
-		<p>Вытянуть таблицу Влада из Tech_DB</p>
-		<p class=linebreak>Контакты/доступ</p>
-		<p>Sites Contact + Tech_DB</p>
-		<p class=linebreak>Аккумуляторы, кондиционеры</p>
-		<p>RDB</p>
-		<p class=linebreak>Комментарии</p>
-		<p>общие комментарии с возможностью добавления	</p>
-	</div>
+<main class="page-main">
+	<section class="site__common">
+		<h3 class="site__title">{{ site.title }}</h3>
+		<p class="site__category">{{ site.category.name }}</p>
+		<p><span class="site__subtitle">Адрес: </span>{{ site.address }}</p>
+		<p><span class="site__subtitle">Приоритет: </span>{{ site_common.priority }}</p>
+		<p><span class="site__subtitle">Расстояние: </span>{{ site_common.distance }} км.</p>
+		<p><span class="site__subtitle">Тип аппаратной: </span>{{ site_common.type_hardware }}</p>
+		{% if site.category.id == 3 %}
+		<p><span class="site__subtitle">Материнский сайт 3G: </span>{{ site.alternative }}</p>
+		{% elif site.alternative != "" and site.alternative != None %}
+		<p><span class="site__subtitle">Шестиризация 3G: </span>{{ site.alternative }}</p>
+		{% endif %}
+	</section>
+	<section class="site__common site__comments">
+		<h3 class="site__comments-title">Комментарии</h3>
+		{% for comment in comments %}
+		<p class="site__comments-info">{{ forloop.counter }}. {{ comment.author }} от {{ comment.created }}:</p>
+		<p class="site__comments-text">{{ comment.text|linebreaks }}</p>
+		{% empty %}
+		<p class="site__comments-text">Комментариев пока нет</p>
+		{% endfor %}
+		{% if user.is_authenticated %}
+		{% if new_comment %}
+		<h3>Комментарий успешно добавлен!</h3>
+		{% else %}
+		<form class="site__comments-form" action="." method="post">
+			{{ comment_form.as_p }}
+			{% csrf_token %}
+			<p><input class="site__comments-button" type="submit" value="Добавить комментарий"></p>
+		</form>
+		{% endif %}
+		{% endif %}
+	</section>
+	{% if site_rrl %}
+	<section class="site__common--not-main site__rrl">
+		<h3 class="site__title--not-main site__title--rrl">РРЛ
+			<i class="arrow down"></i>
+		</h3>
+		<div class="rollup-container-rrl visually-hidden">
+			<table class="sites__table sites__table--rrl">
+				<tr>
+					<th class="sites__table-title">Сайт</th>
+					<th class="sites__table-title">Направление РРЛ</th>
+					<th class="sites__table-title">Оборудование РРЛ</th>
+					<th class="sites__table-title">IP адрес</th>
+				</tr>
+				{% for site_rrl in site_rrl %}
+				<tr>
+					<td class="sites__table-cell">{{ site_rrl.title }}</td>
+					<td class="sites__table-cell">{{ site_rrl.radiolink }}</td>
+					<td class="sites__table-cell">{{ site_rrl.type_rrl }}</td>
+					<td class="sites__table-cell">{{ site_rrl.ip_access }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	</section>
+	{% endif %}
+
+	<section class="site__common--not-main site__battery">
+		<h3 class="site__title--not-main site__title--akb">Аккумуляторы
+			<i class="arrow down"></i>
+		</h3>
+		{% if site.category.id != 3 %}
+		<div class="rollup-container-akb visually-hidden">
+			{% if site_batteries.system_of_voltage != "Информация отсутствует" and site_batteries.system_of_voltage != "PICO RBS" %}
+			<p><span class="site__subtitle">Система питания:</span> {{ site_batteries.system_of_voltage }}</p>
+			<p><span class="site__subtitle">Количество выпрямителей:</span> {{ site_batteries.num_of_rect }} шт.</p>
+			<p><span class="site__subtitle">Тип АКБ:</span> {{ site_batteries.battery_type }} </p>
+			<p><span class="site__subtitle">Количество АКБ:</span> {{ site_batteries.battery_num }}</p>
+			<p><span class="site__subtitle">Емкость АКБ:</span> {{ site_batteries.battery_cap }} Ач</p>
+			<p><span class="site__subtitle">Дата установки АКБ:</span> {{ site_batteries.battery_date }}</p>
+			{% else %}
+			<p><span class="site__subtitle">Система питания:</span> {{ site_batteries.system_of_voltage }}</p>
+			{% endif %}
+		{% else %}
+			<p>Смотри информацию в материнском сайте {{ site.alternative }}</p>
+		{% endif %}
+		</div>
+	</section>
+
+	{% if site_quazar %}
+	<section class="site__common--not-main site__quazar">
+		<h3 class="site__title--not-main site__title--quazar">Информация из квазара
+			<i class="arrow down"></i>
+		</h3>
+		<div class="rollup-container-quazar visually-hidden">
+			{% for site_quazar in site_quazar %}
+			{% if site_quazar.location %}
+			<p><span class="site__subtitle">Локация:</span> {{ site_quazar.location }}</p>
+			{% endif %}
+			{% if site_quazar.access %}
+			<p><span class="site__subtitle">Доступ:</span> {{ site_quazar.access }}</p>
+			{% endif %}
+			{% if site_quazar.keys %}
+			<p><span class="site__subtitle">Ключи:</span> {{ site_quazar.keys }}</p>
+			{% endif %}
+			{% if site_quazar.energy %}
+			<p><span class="site__subtitle">Электроснабжение:</span> {{ site_quazar.energy }}</p>
+			{% endif %}
+			{% if site_quazar.other %}
+			<p><span class="site__subtitle">Прочее:</span> {{ site_quazar.other }}</p>
+			{% endif %}
+			{% endfor %}
+		</div>
+	</section>
+	{% endif %}
+
+	{% if site_old_info %}
+	<section class="site__common--not-main site__oldinfo">
+		<h3 class="site__title--not-main site__title--oldinfo">Информация из TechDB (могут быть неактуальные данные)
+			<i class="arrow down"></i>
+		</h3>
+		<div class="rollup-container-oldinfo visually-hidden">
+			{% for site_old_info in site_old_info %}
+			<p>
+				{{ site_old_info.old_info|linebreaksbr }}
+			</p>
+			{% if not forloop.last %}
+			<hr>{% endif %}
+			{% endfor %}
+		</div>
+	</section>
+	{% endif %}
+
+	{% if site_energy %}
+	<section class="site__common--not-main site__energy">
+		<h3 class="site__title--not-main site__title--energy">Электропитание (информация из TechDB, могут быть
+			неактуальные данные)
+			<i class="arrow down"></i>
+		</h3>
+		<div class="rollup-container-energy visually-hidden">
+			{% for site_energy in site_energy %}
+			<p>
+				{{ site_energy.energy|linebreaksbr }}
+			</p>
+			{% if not forloop.last %}
+			<hr>{% endif %}
+			{% endfor %}
+		</div>
+	</section>
+	{% endif %}
+
+	{% if site_equipment %}
+	<section class="site__common--not-main site__equipment">
+		<h3 class="site__title--not-main site__title--equipment">Оборудование радиоподсистемы (по выгрузке ЦП от
+			07.11.2022)
+			<i class="arrow down"></i>
+		</h3>
+		<div class="rollup-container-equipment visually-hidden">
+			<table class="sites__table">
+				<tr>
+					<th class="sites__table-title">Сайт</th>
+					<th class="sites__table-title">Оборудование</th>
+					<th class="sites__table-title">Серийный номер</th>
+				</tr>
+				{% for site_eq in site_equipment %}
+				<tr>
+					<td class="sites__table-cell">{{ site_eq.title }}</td>
+					<td class="sites__table-cell">{{ site_eq.device }}</td>
+					<td class="sites__table-cell">{{ site_eq.serial_number }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	</section>
+	{% endif %}
+</main>
 {% endblock %}
