@@ -1,0 +1,258 @@
+lt all
+gs+
+confbl+
+
+#RET_AA0001_091
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_091
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_091 administrativeState UNLOCKED
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_091,RetSubUnit=1
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_091
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_091 azimuthHalfPowerBeamwidth 65
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_091 uniqueId TK12D354R19091165R2
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_091 rfPortRef Equipment=1,FieldReplaceableUnit=RRU-1-1,RfPort=R
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_091,RetSubUnit=1 userLabel AA0001_091
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_091 retSubunitRef Equipment=1,AntennaUnitGroup=1,
+AntennaNearUnit=RET_AA0001_091,RetSubUnit=1
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_091,RetSubUnit=1 electricalAntennaTilt 20
+
+
+
+#RET_AA0001_484
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_484
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_484 administrativeState UNLOCKED
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_484,RetSubUnit=1
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_484
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_484 azimuthHalfPowerBeamwidth 65
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_484 uniqueId TK12D354R19091165Z2
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_484 rfPortRef Equipment=1,FieldReplaceableUnit=RRU-1-1,RfPort=R
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_484,RetSubUnit=1 userLabel AA0001_484
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_484 retSubunitRef Equipment=1,AntennaUnitGroup=1,
+AntennaNearUnit=RET_AA0001_484,RetSubUnit=1
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_484,RetSubUnit=1 electricalAntennaTilt 30
+
+
+
+#RET_AA3001_211
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA3001_211
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA3001_211 administrativeState UNLOCKED
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA3001_211,RetSubUnit=1
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA3001_211
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA3001_211 azimuthHalfPowerBeamwidth 65
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA3001_211 uniqueId TK12D354R19091165Y2
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA3001_211 rfPortRef Equipment=1,FieldReplaceableUnit=RRU-1-1,RfPort=R
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA3001_211,RetSubUnit=1 userLabel AA3001_211
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA3001_211 retSubunitRef Equipment=1,AntennaUnitGroup=1,
+AntennaNearUnit=RET_AA3001_211,RetSubUnit=1
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA3001_211,RetSubUnit=1 electricalAntennaTilt 40
+
+
+
+#RET_AA0001_081
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_081
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_081 administrativeState UNLOCKED
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_081,RetSubUnit=1
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_081
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_081 azimuthHalfPowerBeamwidth 65
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_081 uniqueId TK12D354R19091165B1
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_081 rfPortRef Equipment=1,FieldReplaceableUnit=RRU-1-1,RfPort=R
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_081,RetSubUnit=1 userLabel AA0001_081
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_081 retSubunitRef Equipment=1,AntennaUnitGroup=1,
+AntennaNearUnit=RET_AA0001_081,RetSubUnit=1
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_081,RetSubUnit=1 electricalAntennaTilt 50
+
+
+
+#RET_AA0001_181
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181 administrativeState UNLOCKED
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181,RetSubUnit=1
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_181
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_181 azimuthHalfPowerBeamwidth 65
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181 uniqueId TK12D354R19091165R1
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181 rfPortRef Equipment=1,FieldReplaceableUnit=RRU-1-1,RfPort=R
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181,RetSubUnit=1 userLabel AA0001_181
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_181 retSubunitRef Equipment=1,AntennaUnitGroup=1,
+AntennaNearUnit=RET_AA0001_181,RetSubUnit=1
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181,RetSubUnit=1 electricalAntennaTilt 60
+
+
+
+#RET_AA0001_181_2
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181_2
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181_2 administrativeState UNLOCKED
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181_2,RetSubUnit=1
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_181_2
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_181_2 azimuthHalfPowerBeamwidth 65
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181_2 uniqueId TK12D354R19091165Z1
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181_2 rfPortRef Equipment=1,FieldReplaceableUnit=RRU-1-1,RfPort=R
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181_2,RetSubUnit=1 userLabel AA0001_181_2
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_181_2 retSubunitRef Equipment=1,AntennaUnitGroup=1,
+AntennaNearUnit=RET_AA0001_181_2,RetSubUnit=1
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_181_2,RetSubUnit=1 electricalAntennaTilt 90
+
+
+
+#RET_AA0001_511
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511 administrativeState UNLOCKED
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511,RetSubUnit=1
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_511
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_511 azimuthHalfPowerBeamwidth 65
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511 uniqueId TK12D354R19091165Y1
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511 rfPortRef Equipment=1,FieldReplaceableUnit=RRU-1-1,RfPort=R
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511,RetSubUnit=1 userLabel AA0001_511
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_511 retSubunitRef Equipment=1,AntennaUnitGroup=1,
+AntennaNearUnit=RET_AA0001_511,RetSubUnit=1
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511,RetSubUnit=1 electricalAntennaTilt 50
+
+
+
+#RET_AA0001_511
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511 administrativeState UNLOCKED
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511,RetSubUnit=1
+
+CRE Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_511
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_511 azimuthHalfPowerBeamwidth 65
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511 uniqueId TK12D354R19091165Y3
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511 rfPortRef Equipment=1,FieldReplaceableUnit=RRU-1-1,RfPort=R
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511,RetSubUnit=1 userLabel AA0001_511
+
+SET Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=RET_AA0001_511 retSubunitRef Equipment=1,AntennaUnitGroup=1,
+AntennaNearUnit=RET_AA0001_511,RetSubUnit=1
+SET Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=RET_AA0001_511,RetSubUnit=1 electricalAntennaTilt 50
+
+
+
+#RET_AA0001_232
+CRE Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232 administrativeState UNLOCKED
+
+CRE Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232,RetSubUnit=1
+
+CRE Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=RET_AA0001_232
+SET Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=RET_AA0001_232 azimuthHalfPowerBeamwidth 65
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232 uniqueId TK12D354R19090411R2
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232 rfPortRef Equipment=1,FieldReplaceableUnit=RRU-2-1,RfPort=R
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232,RetSubUnit=1 userLabel AA0001_232
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=RET_AA0001_232 retSubunitRef Equipment=1,AntennaUnitGroup=2,
+AntennaNearUnit=RET_AA0001_232,RetSubUnit=1
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232,RetSubUnit=1 electricalAntennaTilt 60
+
+
+
+#RET_AA0001_232_2
+CRE Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232_2
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232_2 administrativeState UNLOCKED
+
+CRE Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232_2,RetSubUnit=1
+
+CRE Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=RET_AA0001_232_2
+SET Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=RET_AA0001_232_2 azimuthHalfPowerBeamwidth 65
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232_2 uniqueId TK12D354R19090411Z2
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232_2 rfPortRef Equipment=1,FieldReplaceableUnit=RRU-2-1,RfPort=R
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232_2,RetSubUnit=1 userLabel AA0001_232_2
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=RET_AA0001_232_2 retSubunitRef Equipment=1,AntennaUnitGroup=2,
+AntennaNearUnit=RET_AA0001_232_2,RetSubUnit=1
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_232_2,RetSubUnit=1 electricalAntennaTilt 20
+
+
+
+#RET_AA0001_262
+CRE Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262 administrativeState UNLOCKED
+
+CRE Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262,RetSubUnit=1
+
+CRE Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=RET_AA0001_262
+SET Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=RET_AA0001_262 azimuthHalfPowerBeamwidth 65
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262 uniqueId TK12D354R19090411Y2
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262 rfPortRef Equipment=1,FieldReplaceableUnit=RRU-2-1,RfPort=R
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262,RetSubUnit=1 userLabel AA0001_262
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=RET_AA0001_262 retSubunitRef Equipment=1,AntennaUnitGroup=2,
+AntennaNearUnit=RET_AA0001_262,RetSubUnit=1
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262,RetSubUnit=1 electricalAntennaTilt 50
+
+
+
+#RET_AA0001_262_2
+CRE Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262_2
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262_2 administrativeState UNLOCKED
+
+CRE Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262_2,RetSubUnit=1
+
+CRE Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=RET_AA0001_262_2
+SET Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=RET_AA0001_262_2 azimuthHalfPowerBeamwidth 65
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262_2 uniqueId TK12D354R19090411B1
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262_2 rfPortRef Equipment=1,FieldReplaceableUnit=RRU-2-1,RfPort=R
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262_2,RetSubUnit=1 userLabel AA0001_262_2
+
+SET Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=RET_AA0001_262_2 retSubunitRef Equipment=1,AntennaUnitGroup=2,
+AntennaNearUnit=RET_AA0001_262_2,RetSubUnit=1
+SET Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=RET_AA0001_262_2,RetSubUnit=1 electricalAntennaTilt 60
+
+
+cvms Add_RET
+gs-
+confbl-

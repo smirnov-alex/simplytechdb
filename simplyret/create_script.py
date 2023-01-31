@@ -17,10 +17,21 @@ def create_script_mos(bs, RET_list):
     bs_name = bs[:6]
     bs_region = bs[:2]
     num_bs_name = int(bs[2:6])    
-    technology_dict = {'GSM900': '', 'GSM1800': '', 'UMTS2100': '_', 'UMTS2100(6x)': '_', 'LTE800': '_08',
-                       'LTE1800': '_01', 'LTE1800(2)': '_01', 'LTE2600': '_02', 'LTE2300': '_03', 'LTE2300(2)': '_03',
-                       'LTE2100': '_05', 'LTE2100(6x)': '_15', 'LTE2600(2)': '_02', 'UMTS2100 (RR4xxx)': '_',
-                       'UMTS2100 (RR5xxx)': '_', }
+    technology_dict = {'GSM900': '_09',
+                       'GSM1800': '_48',
+                       'UMTS2100': '_21',
+                       'UMTS2100(6x)': '_21',
+                       'LTE800': '_08',
+                       'LTE1800': '_18',
+                       'LTE1800(2)': '_18',
+                       'LTE2600': '_26',
+                       'LTE2300': '_23',
+                       'LTE2300(2)': '_23',
+                       'LTE2100': '_51',
+                       'LTE2100(6x)': '_51',
+                       'LTE2600(2)': '_26',
+                       'UMTS2100 (RR4xxx)': '_21',
+                       'UMTS2100 (RR5xxx)': '_21', }
     # проверка наличия пустых строк
     counter = 0
     for item in RET_list:        

@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<deviceScanResult>
+    <ru ldn="ManagedElement=1,Equipment=1,FieldReplaceableUnit=RRU-1-1">
+        <port id="A">
+            <comment warning="Device Scan not supported by Radio Unit" />
+        </port>
+        <port id="B">
+            <comment warning="Device Scan not supported by Radio Unit" />
+        </port>
+        <port id="R">
+            <ald type="Single-antenna RET" unique_id="TK12D354R19091165R2" product_number="TK12-D354R" serial_number="TK12D354R19091165R2" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="R2 880 - 960 MHz P:3-4          " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="128" />
+                    <field id="0x05" antennaGains="155" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R " />
+                    <field id="0x01" antennaModelNumber="TK12-D354R " />
+                    <field id="0x02" antennaSerialNumber="12D354R19091165R2" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19091165Z2" product_number="TK12-D354R" serial_number="TK12D354R19091165Z2" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Z2:RESERVED                     " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="892" />
+                    <field id="0x05" antennaGains="200" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19091165Z2" />
+                    <field id="0x07" antennaMinTilt="0" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19091165Y2" product_number="TK12-D354R" serial_number="TK12D354R19091165Y2" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Y2 1710 - 2690 MHz P:9-10       " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="892" />
+                    <field id="0x05" antennaGains="175" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19091165Y2" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19091165B1" product_number="TK12-D354R" serial_number="TK12D354R19091165B1" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="B1 1710 - 2170 MHz P:5-6        " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="828" />
+                    <field id="0x05" antennaGains="160" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R " />
+                    <field id="0x01" antennaModelNumber="TK12-D354R " />
+                    <field id="0x02" antennaSerialNumber="12D354R19091165B1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19091165R1" product_number="TK12-D354R" serial_number="TK12D354R19091165R1" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="R1 694 - 862 MHz P:1-2          " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="14336" />
+                    <field id="0x05" antennaGains="150" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19091165R1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19091165Z1" product_number="TK12-D354R" serial_number="TK12D354R19091165Z1" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Z1:RESERVED                     " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="892" />
+                    <field id="0x05" antennaGains="200" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19091165Z1" />
+                    <field id="0x07" antennaMinTilt="0" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19091165Y1" product_number="TK12-D354R" serial_number="TK12D354R19091165Y1" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Y1 2490 - 2690 MHz P:7-8        " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="64" />
+                    <field id="0x05" antennaGains="165" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19091165Y1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19091165Y3" product_number="TK12-D354R" serial_number="TK12D354R19091165Y3" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Y3 1710 - 2690 MHz P:11-12      " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="892" />
+                    <field id="0x05" antennaGains="175" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19091165Y3" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+        </port>
+    </ru>
+    <ru ldn="ManagedElement=1,Equipment=1,FieldReplaceableUnit=RRU-10-1">
+        <port id="A" />
+        <port id="B" />
+        <port id="R" />
+    </ru>
+    <ru ldn="ManagedElement=1,Equipment=1,FieldReplaceableUnit=RRU-11-1">
+        <port id="A" />
+        <port id="B" />
+        <port id="R" />
+    </ru>
+    <ru ldn="ManagedElement=1,Equipment=1,FieldReplaceableUnit=RRU-12-1">
+        <port id="A" />
+        <port id="B" />
+        <port id="R" />
+    </ru>
+    <ru ldn="ManagedElement=1,Equipment=1,FieldReplaceableUnit=RRU-2-1">
+        <port id="A">
+            <comment warning="Device Scan not supported by Radio Unit" />
+        </port>
+        <port id="B">
+            <comment warning="Device Scan not supported by Radio Unit" />
+        </port>
+        <port id="R">
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090411R2" product_number="TK12-D354R" serial_number="TK12D354R19090411R2" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="R2 880 - 960 MHz P:3-4          " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="128" />
+                    <field id="0x05" antennaGains="155" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R " />
+                    <field id="0x01" antennaModelNumber="TK12-D354R " />
+                    <field id="0x02" antennaSerialNumber="12D354R19090411R2" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090411Z2" product_number="TK12-D354R" serial_number="TK12D354R19090411Z2" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Z2:RESERVED                     " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="892" />
+                    <field id="0x05" antennaGains="200" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19090411Z2" />
+                    <field id="0x07" antennaMinTilt="0" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090411Y2" product_number="TK12-D354R" serial_number="TK12D354R19090411Y2" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Y2 1710 - 2690 MHz P:9-10       " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="892" />
+                    <field id="0x05" antennaGains="175" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19090411Y2" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090411B1" product_number="TK12-D354R" serial_number="TK12D354R19090411B1" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="B1 1710 - 2170 MHz P:5-6        " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="828" />
+                    <field id="0x05" antennaGains="160" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R " />
+                    <field id="0x01" antennaModelNumber="TK12-D354R " />
+                    <field id="0x02" antennaSerialNumber="12D354R19090411B1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090411R1" product_number="TK12-D354R" serial_number="TK12D354R19090411R1" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="R1 694 - 862 MHz P:1-2          " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="14336" />
+                    <field id="0x05" antennaGains="150" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19090411R1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090411Z1" product_number="TK12-D354R" serial_number="TK12D354R19090411Z1" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Z1:RESERVED                     " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="892" />
+                    <field id="0x05" antennaGains="200" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19090411Z1" />
+                    <field id="0x07" antennaMinTilt="0" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090411Y1" product_number="TK12-D354R" serial_number="TK12D354R19090411Y1" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Y1 2490 - 2690 MHz P:7-8        " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="64" />
+                    <field id="0x05" antennaGains="165" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19090411Y1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090411Y3" product_number="TK12-D354R" serial_number="TK12D354R19090411Y3" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Y3 1710 - 2690 MHz P:11-12      " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="892" />
+                    <field id="0x05" antennaGains="175" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19090411Y3" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+        </port>
+    </ru>
+    <ru ldn="ManagedElement=1,Equipment=1,FieldReplaceableUnit=RRU-3-1">
+        <port id="A">
+            <comment warning="Device Scan not supported by Radio Unit" />
+        </port>
+        <port id="B">
+            <comment warning="Device Scan not supported by Radio Unit" />
+        </port>
+        <port id="R">
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090389R2" product_number="TK12-D354R" serial_number="TK12D354R19090389R2" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="R2 880 - 960 MHz P:3-4          " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="128" />
+                    <field id="0x05" antennaGains="155" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R " />
+                    <field id="0x01" antennaModelNumber="TK12-D354R " />
+                    <field id="0x02" antennaSerialNumber="12D354R19090389R2" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090389Z2" product_number="TK12-D354R" serial_number="TK12D354R19090389Z2" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Z2:RESERVED                     " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="892" />
+                    <field id="0x05" antennaGains="200" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19090389Z2" />
+                    <field id="0x07" antennaMinTilt="0" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090389Y2" product_number="TK12-D354R" serial_number="TK12D354R19090389Y2" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Y2 1710 - 2690 MHz P:9-10       " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="892" />
+                    <field id="0x05" antennaGains="175" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19090389Y2" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090389B1" product_number="TK12-D354R" serial_number="TK12D354R19090389B1" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="B1 1710 - 2170 MHz P:5-6        " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="828" />
+                    <field id="0x05" antennaGains="160" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R " />
+                    <field id="0x01" antennaModelNumber="TK12-D354R " />
+                    <field id="0x02" antennaSerialNumber="12D354R19090389B1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090389R1" product_number="TK12-D354R" serial_number="TK12D354R19090389R1" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="R1 694 - 862 MHz P:1-2          " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="14336" />
+                    <field id="0x05" antennaGains="150" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19090389R1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090389Z1" product_number="TK12-D354R" serial_number="TK12D354R19090389Z1" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Z1:RESERVED                     " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="892" />
+                    <field id="0x05" antennaGains="200" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19090389Z1" />
+                    <field id="0x07" antennaMinTilt="0" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090389Y1" product_number="TK12-D354R" serial_number="TK12D354R19090389Y1" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Y1 2490 - 2690 MHz P:7-8        " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="64" />
+                    <field id="0x05" antennaGains="165" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19090389Y1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="TK12D354R19090389Y3" product_number="TK12-D354R" serial_number="TK12D354R19090389Y3" hardware_version="302" software_version="WA8_TE0F">
+                <data>
+                    <field id="0x23" baseStationId="                                " />
+                    <field id="0x21" installationDate="      " />
+                    <field id="0x22" installersId="     " />
+                    <field id="0x24" sectorId="Y3 1710 - 2690 MHz P:11-12      " />
+                    <field id="0x25" antennaBearing="0" />
+                    <field id="0x03" antennaOperatingBands="892" />
+                    <field id="0x05" antennaGains="175" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x01" antennaModelNumber="TK12-D354R" />
+                    <field id="0x02" antennaSerialNumber="12D354R19090389Y3" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="100" />
+                </data>
+            </ald>
+        </port>
+    </ru>
+    <ru ldn="ManagedElement=1,Equipment=1,FieldReplaceableUnit=RRU-4-1">
+        <port id="A" />
+        <port id="B" />
+        <port id="R" />
+    </ru>
+    <ru ldn="ManagedElement=1,Equipment=1,FieldReplaceableUnit=RRU-5-1">
+        <port id="A" />
+        <port id="B" />
+        <port id="R" />
+    </ru>
+    <ru ldn="ManagedElement=1,Equipment=1,FieldReplaceableUnit=RRU-6-1">
+        <port id="A" />
+        <port id="B" />
+        <port id="R" />
+    </ru>
+    <ru ldn="ManagedElement=1,Equipment=1,FieldReplaceableUnit=RRU-7-1">
+        <port id="A" />
+        <port id="B" />
+        <port id="R">
+            <ald type="Single-antenna RET" unique_id="MTAU011J013141T--Y2" product_number="FlexRCU" serial_number="AU011J013141T--Y2" hardware_version="Hw-V3.00@161010" software_version="Fw-V1.00@180816">
+                <data>
+                    <field id="0x23" baseStationId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x21" installationDate="ÿÿÿÿÿÿ" />
+                    <field id="0x22" installersId="ÿÿÿÿÿ" />
+                    <field id="0x24" sectorId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x25" antennaBearing="65535" />
+                    <field id="0x03" antennaOperatingBands="50044" />
+                    <field id="0x05" antennaGains="170" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x02" antennaSerialNumber="AC035J105305T--Y2" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="MTAU011J013141T--R1" product_number="FlexRCU" serial_number="AU011J013141T--R1" hardware_version="Hw-V3.00@161010" software_version="Fw-V1.00@180816">
+                <data>
+                    <field id="0x23" baseStationId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x21" installationDate="ÿÿÿÿÿÿ" />
+                    <field id="0x22" installersId="ÿÿÿÿÿ" />
+                    <field id="0x24" sectorId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x25" antennaBearing="65535" />
+                    <field id="0x03" antennaOperatingBands="63619" />
+                    <field id="0x05" antennaGains="150" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x02" antennaSerialNumber="AC035J105305T--R1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="MTAU011J013141T--Y1" product_number="FlexRCU" serial_number="AU011J013141T--Y1" hardware_version="Hw-V3.00@161010" software_version="Fw-V1.00@180816">
+                <data>
+                    <field id="0x23" baseStationId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x21" installationDate="ÿÿÿÿÿÿ" />
+                    <field id="0x22" installersId="ÿÿÿÿÿ" />
+                    <field id="0x24" sectorId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x25" antennaBearing="65535" />
+                    <field id="0x03" antennaOperatingBands="50044" />
+                    <field id="0x05" antennaGains="170" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x02" antennaSerialNumber="AC035J105305T--Y1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+        </port>
+    </ru>
+    <ru ldn="ManagedElement=1,Equipment=1,FieldReplaceableUnit=RRU-8-1">
+        <port id="A" />
+        <port id="B" />
+        <port id="R">
+            <ald type="Single-antenna RET" unique_id="MTAU011J041427T--Y2" product_number="FlexRCU" serial_number="AU011J041427T--Y2" hardware_version="Hw-V3.00@161010" software_version="Fw-V1.00@180816">
+                <data>
+                    <field id="0x23" baseStationId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x21" installationDate="ÿÿÿÿÿÿ" />
+                    <field id="0x22" installersId="ÿÿÿÿÿ" />
+                    <field id="0x24" sectorId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x25" antennaBearing="65535" />
+                    <field id="0x03" antennaOperatingBands="50044" />
+                    <field id="0x05" antennaGains="170" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x02" antennaSerialNumber="AC035J115488T--Y2" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="MTAU011J041427T--R1" product_number="FlexRCU" serial_number="AU011J041427T--R1" hardware_version="Hw-V3.00@161010" software_version="Fw-V1.00@180816">
+                <data>
+                    <field id="0x23" baseStationId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x21" installationDate="ÿÿÿÿÿÿ" />
+                    <field id="0x22" installersId="ÿÿÿÿÿ" />
+                    <field id="0x24" sectorId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x25" antennaBearing="65535" />
+                    <field id="0x03" antennaOperatingBands="63619" />
+                    <field id="0x05" antennaGains="150" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x02" antennaSerialNumber="AC035J115488T--R1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="MTAU011J041427T--Y1" product_number="FlexRCU" serial_number="AU011J041427T--Y1" hardware_version="Hw-V3.00@161010" software_version="Fw-V1.00@180816">
+                <data>
+                    <field id="0x23" baseStationId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x21" installationDate="ÿÿÿÿÿÿ" />
+                    <field id="0x22" installersId="ÿÿÿÿÿ" />
+                    <field id="0x24" sectorId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x25" antennaBearing="65535" />
+                    <field id="0x03" antennaOperatingBands="50044" />
+                    <field id="0x05" antennaGains="170" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x02" antennaSerialNumber="AC035J115488T--Y1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+        </port>
+    </ru>
+    <ru ldn="ManagedElement=1,Equipment=1,FieldReplaceableUnit=RRU-9-1">
+        <port id="A" />
+        <port id="B" />
+        <port id="R">
+            <ald type="Single-antenna RET" unique_id="MTAU011I481498T--Y2" product_number="FlexRCU" serial_number="AU011I481498T--Y2" hardware_version="Hw-V3.00@161010" software_version="Fw-V1.00@180816">
+                <data>
+                    <field id="0x23" baseStationId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x21" installationDate="ÿÿÿÿÿÿ" />
+                    <field id="0x22" installersId="ÿÿÿÿÿ" />
+                    <field id="0x24" sectorId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x25" antennaBearing="65535" />
+                    <field id="0x03" antennaOperatingBands="50044" />
+                    <field id="0x05" antennaGains="170" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x02" antennaSerialNumber="AC035I510698T--Y2" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="MTAU011I481498T--R1" product_number="FlexRCU" serial_number="AU011I481498T--R1" hardware_version="Hw-V3.00@161010" software_version="Fw-V1.00@180816">
+                <data>
+                    <field id="0x23" baseStationId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x21" installationDate="ÿÿÿÿÿÿ" />
+                    <field id="0x22" installersId="ÿÿÿÿÿ" />
+                    <field id="0x24" sectorId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x25" antennaBearing="65535" />
+                    <field id="0x03" antennaOperatingBands="63619" />
+                    <field id="0x05" antennaGains="150" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x02" antennaSerialNumber="AC035I510698T--R1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+            <ald type="Single-antenna RET" unique_id="MTAU011I481498T--Y1" product_number="FlexRCU" serial_number="AU011I481498T--Y1" hardware_version="Hw-V3.00@161010" software_version="Fw-V1.00@180816">
+                <data>
+                    <field id="0x23" baseStationId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x21" installationDate="ÿÿÿÿÿÿ" />
+                    <field id="0x22" installersId="ÿÿÿÿÿ" />
+                    <field id="0x24" sectorId="ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" />
+                    <field id="0x25" antennaBearing="65535" />
+                    <field id="0x03" antennaOperatingBands="50044" />
+                    <field id="0x05" antennaGains="170" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x01" antennaModelNumber="AC035" />
+                    <field id="0x02" antennaSerialNumber="AC035I510698T--Y1" />
+                    <field id="0x07" antennaMinTilt="20" />
+                    <field id="0x06" antennaMaxTilt="120" />
+                </data>
+            </ald>
+        </port>
+    </ru>
+</deviceScanResult>

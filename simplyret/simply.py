@@ -8,15 +8,15 @@ from .calibration_formatted import calibration_formatted
 from .bb_or_dus import bb_or_dus, get_enodeb
 
 SERVERS = {
-    'ENM6': '10.12.72.28',
-    'ENM7': '10.12.110.28',
-    'ENM8': '10.12.112.28',
-    'ENM9': '10.12.114.28',
-    'ENM10': '10.12.116.28',
-    'ENM11': '10.12.118.28',
-    'ENM12': '10.12.120.28',
-    'ENM14': '10.12.240.28',
-    'ENM15': '10.12.246.28',
+    'ESC01': '192.168.0.1',
+    'ESC02': '192.168.0.2',
+    'ESC03': '192.168.0.3',
+    'ESC04': '192.168.0.4',
+    'ESC05': '192.168.0.5',
+    'ESC06': '192.168.0.6',
+    'ESC07': '192.168.0.7',
+    'ESC08': '192.168.0.8',
+    'ESC09': '192.168.0.9',
 }
 
 SERVERS_NAMES = [key for key in SERVERS.keys()]
@@ -51,7 +51,7 @@ def upload_unique_id_BS(bs, login, password, server):
                         f',ManagedElement=1,NodeManagementFunction=1,EquipmentDiscovery=1_DeviceScanResult.xml'
     else:
         filename_full = f'ManagedElement={bs.upper()},NodeSupport=1,EquipmentDiscovery=1_DeviceScanResult.xml'
-    command = f'amos -v username=rbs,password=RBSEricsson12# {bs.upper()} \n'
+    command = f'amos -v username=base_station,password=HiddenPass99_00 {bs.upper()} \n'
     long_pathname = f'/home/shared/{login}/RET'
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -184,7 +184,7 @@ def check_calibration_BS(bs, login, password, server):
 
 
 def connection_for_checking(bs, login, password, ip_server):
-    command0 = f'amos -v username=rbs,password=RBSEricsson12# {bs.upper()}' + '\n'
+    command0 = f'amos -v username=base_station,password=HiddenPass99_00 {bs.upper()}' + '\n'
     command1 = 'hget AntennaNearUnit antennaNearUnitId|operationalState|^uniqueId|rfPortRef' + '\n'
     command2 = 'hget RetSubUnit= electricalAntennaTilt|operationalState|userLabel' + '\n'
     client = paramiko.SSHClient()
@@ -237,7 +237,7 @@ def set_ret_on_BS(bs, login, password, server):
             sftp.put(f'{bs.upper()}_Add_RET.mos',
                      f'/home/shared/{login}/RET/{bs.upper()}_Add_RET.mos')
             sftp.close()
-            command = f'amos -v username=rbs,password=RBSEricsson12# {bs.upper()}\n'
+            command = f'amos -v username=base_station,password=HiddenPass99_00 {bs.upper()}\n'
             run_command = f'run /home/shared/{login}/RET/{bs.upper()}_Add_RET.mos\n'
             client2 = paramiko.SSHClient()
             client2.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -255,4 +255,4 @@ def set_ret_on_BS(bs, login, password, server):
                 time.sleep(3)
             return f'Прописка RET на {bs.upper()} завершена!'
         except paramiko.AuthenticationException:
-            return 'Нет подключения! Проверьте имя/пароль пользователя ENM!'
+            return 'Нет подключения! Проверьте имя/пароль пользователя ESC!'

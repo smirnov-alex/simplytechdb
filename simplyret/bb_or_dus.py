@@ -24,23 +24,20 @@ def bb_or_dus(bs):
     return digital_unit
 
 
-# print(bb_or_dus(bs))
-
-
 def get_enodeb(bs):
     bs_region = bs[:2]
     enodeb_dict = {
-        'CH': 'CHE',
-        'EK': 'EKT',
-        'HM': 'HAN',
-        'KG': 'KRG',
-        'OB': 'ORB',
-        'PM': 'PRM',
-        'TU': 'TUM',
-        'YN': 'YNR',
-        'SP': 'SPB',
-        'LE': 'LEN',
-        'UF': 'UFA',
-        'CO': 'CHE',
+        'AA': 'AAA',
+        'BB': 'BBB',
+        'CC': 'CCC',
+        'DD': 'DDD',
+        'EE': 'EEE',
+        'FF': 'FFF',
+        'GG': 'GGG',
+        'HH': 'HHH',
+        'JJ': 'JJJ',
+        'KK': 'KKK',
+        'LL': 'LLL',
+        'MM': 'MMM',
     }
     return enodeb_dict[bs_region.upper()]
