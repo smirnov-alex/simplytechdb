@@ -3,65 +3,72 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="{% static 'techdb/style.css' %}">
-  <link rel="icon" href="{% static 'techdb/favicon.ico' %}">
-  <title>{% block title %} Главная {% endblock %} :: Simply TechDB</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'techdb/style.css' %}">
+    <link rel="icon" href="{% static 'techdb/favicon.ico' %}">
+    <title>{% block title %} Главная {% endblock %} :: Simply TechDB</title>
 </head>
 
 <body>
 
-  <header class="page-header">
+<header class="page-header">
     <div class="page-header__container">
-      <a href="{% url 'index' %}" class="page-header__logo">
-        <img src="{% static 'techdb/img/radiotower.svg' %}" alt="Simply TechDB" class="page-header__img" height="80">
-      </a>
-      <h1 class="page-header__title">
-        <a href="{% url 'index' %}" class="page-header__link">SIMPLY TECHDB</a>
-      </h1>
+        <a href="{% url 'index' %}" class="page-header__logo">
+            <img src="{% static 'techdb/img/radiotower.svg' %}" alt="Simply TechDB" class="page-header__img"
+                 height="80">
+        </a>
+        <h1 class="page-header__title">
+            <a href="{% url 'index' %}" class="page-header__link">SIMPLY TECHDB</a>
+        </h1>
 
-      <div class="page-header__login">
-        <img src="{% static 'techdb/img/nonameuser.png' %}" alt="" class="page-header__user-picture" height="32">
-        {% if user.is_authenticated %}
-        <a href="{% url 'logout' %}" class="page-header__login-link">{{ user.get_full_name }}</a>
-        {% else %}
-        <a href="{% url 'login' %}" class="page-header__login-link">Авторизоваться</a>
-        {% endif %}
-      </div>
+        <div class="page-header__login">
+            <img src="{% static 'techdb/img/nonameuser.png' %}" alt="" class="page-header__user-picture" height="32">
+            {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}" class="page-header__login-link">{{ user.get_full_name }}</a>
+            {% else %}
+            <a href="{% url 'login' %}" class="page-header__login-link">Авторизоваться</a>
+            {% endif %}
+        </div>
     </div>
     <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="{% url 'phonebook' %}" class="navigation__link">Телефонный справочник</a>
-        </li>
-        <li class="navigation__item">
-          <a href="{% url 'useful_sites' %}" class="navigation__link">Полезные ссылки</a>
-        </li>
-        <li class="navigation__item">
-          <a href="{% url 'bss_info' %}" class="navigation__link">Справочник BSS</a>
-        </li>
-        <li class="navigation__item">
-          <a href="{% url 'tn_info' %}" class="navigation__link">Справочник TN</a>
-        </li>
-      </ul>
+        <ul class="navigation__list">
+            {% if user.is_authenticated %}
+            <li class="navigation__item">
+                <a href="{% url 'new' %}" class="navigation__link">Добавить сайт</a>
+            </li>
+            {% else %}
+            {% endif %}
+            <li class="navigation__item">
+                <a href="{% url 'phonebook' %}" class="navigation__link">Телефонный справочник</a>
+            </li>
+            <li class="navigation__item">
+                <a href="{% url 'useful_sites' %}" class="navigation__link">Полезные ссылки</a>
+            </li>
+            <li class="navigation__item">
+                <a href="{% url 'bss_info' %}" class="navigation__link">Справочник BSS</a>
+            </li>
+            <li class="navigation__item">
+                <a href="{% url 'tn_info' %}" class="navigation__link">Справочник TN</a>
+            </li>
+        </ul>
     </nav>
-  </header>
-  {% block content %}
-  {% endblock %}
+</header>
+{% block content %}
+{% endblock %}
 
-  <footer class="page-footer">
+<footer class="page-footer">
     <p class="page-footer__copyright">© Simply TechDB</p>
     <ul class="page-footer__navlist">
-      <li class="page-footer__navitem">
-        <a href = "{% url 'index' %}" class="page-footer__navlink">Simply TechDB</a>        
-      </li>
-      <li class="page-footer__navitem">
-        <a href = "{% url 'main' %}" class="page-footer__navlink">Simply RET</a>
-      </li>
+        <li class="page-footer__navitem">
+            <a href="{% url 'index' %}" class="page-footer__navlink">Simply TechDB</a>
+        </li>
+        <li class="page-footer__navitem">
+            <a href="{% url 'main' %}" class="page-footer__navlink">Simply RET</a>
+        </li>
     </ul>
     <p class="page-footer__year">{% now "Y" %}</p>
-  </footer>
+</footer>
 </body>
 <script src="{% static 'techdb/script.js' %}" type="module"></script>
 

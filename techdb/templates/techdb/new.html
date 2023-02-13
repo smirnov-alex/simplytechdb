@@ -7,8 +7,25 @@
     <p>
     <form method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        <input class="site__comments-button" type="submit" value="Добавить">
+        <p><label for="id_title">Сайт:</label> <input type="text" name="title" maxlength="50" required id="id_title">
+        </p>
+        <p><label for="id_address">Адрес:</label> <textarea name="address" cols="40" rows="1" id="id_address">
+</textarea></p>
+        <p><label for="id_status">Статус:</label> <textarea name="status" cols="40" rows="1" id="id_status">
+</textarea></p>
+        <p><label for="id_alternative">Альтернатива:</label> <textarea name="alternative" cols="40" rows="1"
+                id="id_alternative">
+</textarea></p>
+        <p><label for="id_category">Категория:</label> <select name="category" required id="id_category">
+
+                <option value="1" selected>Базовая станция</option>
+
+                <option value="2">Транспортная точка</option>
+
+                <option value="3">Шестиризация</option>
+
+            </select></p>
+        <input class="site__comments-button" type="submit" value="Добавить" />
     </form>
     </p>
 </div>

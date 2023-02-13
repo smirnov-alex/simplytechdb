@@ -8,7 +8,7 @@ import datetime
 
 from .models import (Site, Category, SiteCommon, SiteEquipment, SiteBatteries, SiteRRL, SiteEnergy, SiteOldInfo,
                      SiteQuazar, PhoneBook, DutyTimetable)
-from .forms import SiteForm, CommentForm
+from .forms import SiteForm, CommentForm, SiteAkbForm, SiteCommonForm
 
 
 def index(request):
@@ -82,6 +82,19 @@ def new_site(request):
         return render(request, 'techdb/new.html', {'form': form})
     new_site = form.save(commit=False)
     new_site.save()
+    return redirect('new_site_info')
+
+@login_required
+def new_site_info(request):
+    form_common = SiteCommonForm(request.POST or None)
+    form_akb = SiteAkbForm(request.POST or None)
+    site = Site.objects.latest('id')
+    if not form_common.is_valid() or not form_akb.is_valid():
+        return render(request, 'techdb/new_info.html', {'form_akb': form_akb, 'form_common': form_common, 'site': site})
+    new_site_common = form_common.save(commit=False)
+    new_site_common.save()
+    new_site_akb = form_akb.save(commit=False)
+    new_site_akb.save()
     return redirect('index')
 
 

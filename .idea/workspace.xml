@@ -6,21 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a49b9595-4706-4aae-a613-7eb4dc3b79ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/bb_or_dus.py" beforeDir="false" afterPath="$PROJECT_DIR$/simplyret/bb_or_dus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/create_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/simplyret/create_script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/simplyret/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/simply.py" beforeDir="false" afterPath="$PROJECT_DIR$/simplyret/simply.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/static/simplyret/fonts/StandardStencil-Bold.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/static/simplyret/fonts/Tele2DisplaySerif-Bold.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/static/simplyret/fonts/Tele2DisplaySerif-Regular.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/static/simplyret/fonts/Tele2TextSans-Bold.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/static/simplyret/fonts/Tele2TextSans-Regular.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/static/simplyret/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/simplyret/static/simplyret/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/templates/layout/basic_ret.html" beforeDir="false" afterPath="$PROJECT_DIR$/simplyret/templates/layout/basic_ret.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/templates/simplyret/check-calibration.html" beforeDir="false" afterPath="$PROJECT_DIR$/simplyret/templates/simplyret/check-calibration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/templates/simplyret/create-script.html" beforeDir="false" afterPath="$PROJECT_DIR$/simplyret/templates/simplyret/create-script.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplyret/templates/simplyret/upload-unique-id.html" beforeDir="false" afterPath="$PROJECT_DIR$/simplyret/templates/simplyret/upload-unique-id.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/techdb/static/techdb/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/static/techdb/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simplytechdb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/simplytechdb/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simplytechdb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/simplytechdb/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/templates/layout/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/templates/layout/basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/templates/techdb/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/templates/techdb/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techdb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/techdb/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +42,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/smirn/Documents/python_work/simplytechdb",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,12 +53,13 @@
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\smirn\Documents\python_work\Dev\simplytechdb\techdb\static\techdb" />
-      <recent name="C:\Users\smirn\Documents\python_work\Dev\simplytechdb\techdb" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\smirn\Documents\python_work\Dev\simplytechdb\techdb\templates\techdb" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\smirn\Documents\python_work\simplytechdb\simplytechdb" />
+      <recent name="C:\Users\smirn\Documents\python_work\Dev\simplytechdb\techdb\static\techdb" />
+      <recent name="C:\Users\smirn\Documents\python_work\Dev\simplytechdb\techdb" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
@@ -77,7 +73,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628514579690</updated>
-      <workItem from="1675054584178" duration="11267000" />
+      <workItem from="1675054584178" duration="12628000" />
+      <workItem from="1675271848574" duration="2110000" />
+      <workItem from="1676306816786" duration="1506000" />
     </task>
     <servers />
   </component>
