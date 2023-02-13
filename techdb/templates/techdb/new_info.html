@@ -1,0 +1,59 @@
+{% extends "layout/basic.html" %}
+{% block title %} Добавить сайт (инфо) {% endblock %}
+{% block content %}
+
+<div class="login__container">
+    <h2 class="login__title">Добавить информацию по новому сайту {{ site.title }}</h2>
+    <p>
+    <form method="post">
+        {% csrf_token %}
+        <h3 class="site__title--not-main">Общая информация</h3>
+        <input id="id_title" type="text" name="title" value="{{ site.id }}" hidden>
+        <p>
+            <label for="id_distance">Расстояние:</label> 
+            <input type="number" name="distance" id="id_distance">
+        </p>
+        <p>
+            <label for="id_priority">Приоритет:</label> 
+            <textarea name="priority" cols="40" rows="1" id="id_priority">
+            </textarea>
+        </p>
+        <p>
+            <label for="id_type_hardware">Тип аппаратной:</label> 
+            <textarea name="type_hardware" cols="40" rows="1" id="id_type_hardware">
+            </textarea>
+        </p>
+        <h3 class="site__title--not-main">Аккумуляторы и ИБП</h3>
+        <input id="id_title" type="text" name="title" value="{{ site.id }}" hidden>
+        <p>
+            <label for="id_system_of_voltage">Система питания:</label>
+            <textarea name="system_of_voltage" cols="40" rows="1" id="id_system_of_voltage">
+            </textarea>
+        </p>
+        <p>
+            <label for="id_num_of_rect">Количество выпрямителей:</label>
+            <input type="number" name="num_of_rect" id="id_num_of_rect">
+        </p>
+        <p>
+            <label for="id_battery_type">Тип АКБ:</label>
+            <textarea name="battery_type" cols="40" rows="1" id="id_battery_type">
+            </textarea>
+        </p>
+        <p>
+            <label for="id_battery_num">Количество АКБ:</label>
+            <input type="number" name="battery_num" id="id_battery_num" placeholder="Количество полок">
+        </p>
+        <p>
+            <label for="id_battery_cap">Емкость АКБ:</label>
+            <input type="number" name="battery_cap" id="id_battery_cap">
+        </p>
+        <p>
+            <label for="id_battery_date">Дата установки АКБ:</label>
+            <input type="date" name="battery_date" id="id_battery_date">
+        </p>
+
+        <input class="site__comments-button" type="submit" value="Добавить">
+    </form>
+    </p>
+</div>
+{% endblock %}
